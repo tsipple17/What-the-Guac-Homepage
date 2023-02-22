@@ -1,29 +1,58 @@
 @charset "utf-8";
 /* CSS Document */
 
+	/* Flexbox item for the first image section */
+	.image-section1 {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	
+	/* Flexbox item for the second image section */
+	.image-section2 {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		align-items: center;
+	}
+	
+	/* Flexbox item for the third image section */
+	.image-section3 {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	
+	/* Styling for the text in the image sections */
+	.image-text {
+		width: 50%;
+		padding: 20px;
+		font-size: 20px;
+		line-height: 1.5;
+	}
+
 body {
-	background-color: powderblue;
+	background-color: #ffffff;
 	margin-left: 20px;
 	margin-right: 20px;
 }
 
 h1 {
 	font-family: "Arial";
-	background-color: #001F5F;
-	color: powderblue;
-	padding-bottom: 10px;
-    padding-top: 10px;
+  font-size: 40px;
+	font-weight: bold;
+	background-color: #205b1b;
+	color: #43c13c;
+	padding-bottom: 30px;
+    padding-top: 30px;
 	margin-bottom: 0px;
 	text-align: center;
 }
 
-h3 {
-	font-family: "Arial";
-	background-color: #001F5F;
-	color: powderblue;
-	margin-top: 0px;
-	padding-bottom: 10px;
-	text-align: center;
+#p1 {
+	font-weight: bold;
 }
 
 .container {
@@ -37,24 +66,44 @@ h3 {
 }
 
 nav {
-	margin: auto;
-	height: 20px;
-	padding: 6px;
-	color: #001F5F;
 	font-family: "Arial";
 	font-weight: bold;
 	font-size: 20px;
 }
 
-.navelement {
-	width: 30%;
-	height: 20px;
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding-bottom: 10px;
+    padding-top: 10px;
+	overflow: hidden;
+	background-color: #43c13c;
+	display: flex;
+	justify-content: space-between;
 	text-align: center;
-	float: left;
-	margin: 1.66666%;
-	padding: 0;
 }
 
+li {
+	display: inline;
+}
 
+li a {
+	color: #ffffff;
+	text-align: center;
+	padding-left: 14px;
+	padding-right: 50px;
+	text-decoration: none;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+.navelement {
+	font-family: "Arial";
+	font-size: 5px;
+	text-decoration: none;
+	text-align: center;
+}
 
 
