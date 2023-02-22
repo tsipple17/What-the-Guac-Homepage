@@ -1,13 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-@media screen and (max-width:768px) {
-.container img {
-  max-width: 768px;
-}
-
-}
-
 	/* Flexbox item for the first image section */
 	.image-section1 {
 		display: flex;
