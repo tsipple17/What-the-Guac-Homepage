@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+	/* Flexbox item for the first image section */
+	.image-section1 {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	
+	/* Flexbox item for the second image section */
+	.image-section2 {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		align-items: center;
+	}
+	
+	/* Flexbox item for the third image section */
+	.image-section3 {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	
+	/* Styling for the text in the image sections */
+	.image-text {
+		width: 50%;
+		padding: 20px;
+		font-size: 20px;
+		line-height: 1.5;
+	}
+
+body {
+	background-color: #ffffff;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+h1 {
+	font-family: "Arial";
+  font-size: 60px;
+	font-weight: bold;
+	background-color: #205b1b;
+	color: #43c13c;
+	padding-bottom: 30px;
+    padding-top: 30px;
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+#p1 {
+	font-weight: bold;
+}
+
+p {
+	font-family: "Arial";
+}
+
+h3 {
+	font-family: "Arial";
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+}
+
+.container img {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+nav {
+	font-family: "Arial";
+	font-weight: bold;
+	font-size: 20px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding-bottom: 10px;
+    padding-top: 10px;
+	overflow: hidden;
+	background-color: #43c13c;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+
+li {
+	display: inline;
+}
+
+li a {
+	color: #ffffff;
+	text-align: center;
+	padding-left: 14px;
+	padding-right: 50px;
+	text-decoration: none;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+.navelement {
+	font-family: "Arial";
+	font-size: 12px;
+	text-decoration: none;
+	text-align: center;
+	padding: 5px;
+}
+
+.responsive {
+	width: 100%;
+	height: auto;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
