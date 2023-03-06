@@ -4,6 +4,23 @@
 <meta charset="utf-8">
 <title>What the Guac Recipes</title>
 	<link rel="stylesheet" href="WhatTheGuac_stylesheet_v2.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+		$(document).ready(function(){
+	
+			$("#b1").click(function(){
+				$(".ways").show();
+				$("#b2").show();
+				$("#b1").hide();
+				});
+
+			$("#b2").click(function(){
+				$(".ways").hide();
+				$("#b1").show();
+				$("#b2").hide();			
+				});
+		});
+	</script>		
 </head>
 
 <body>
@@ -13,7 +30,7 @@
 	<nav>
 	<ul>
   	<li><a href="WhatTheGuac_mainpage.html">HOME</a></li>
-  	<li><a href="#WHERE">WHERE</a></li>
+  	<li><a href="WhatTheGuac_where.html">WHERE</a></li>
   	<li><a href="WhatTheGuac_grow.html">GROW</a></li>
   	<li><a href="WhatTheGuac_recipes.html">RECIPES</a></li>
 	</ul>
@@ -76,13 +93,43 @@
   	<div class="row">
 	<div class="column">
 	<p>
-		2nd recipe here
+		You will need:
+		<br>
+		<br>
+		½ ripe avocado
+		<br>
+		1 large green apple
+		<br>
+		1 banana
+		<br>
+		1 cup baby spinach or kale, loosely packed - or other chopped greens!
+		<br>
+		½ cup water
+		<br>
+		1 cup frozen pineapple chunks
+		<br>
+		10 ice cubes
+		<br>
+		1 tablespoon lemon juice
+	</p>
+	<br>	
+	<p>
+		First, pit the avocado and scoop out one half of the flesh into the blender. Tip: To easily remove the pit, use a knife and firmly knock the blade into the pit until it is slightly wedged inside. Twist the knife while it’s still inside to take the pit out.
+		<br>
+		<br>
+		Second, chop the apple, leaving the skin on. Break the banana into pieces and place them both in the blender. Add the water and baby kale leaves. Blend until smooth.
+		<br>
+		<br>
+		Lastly, add the ice, frozen pineapple or mango, and lemon juice. Blend again until smooth, then serve in a cup as is!
+		<br>
+		<br>
+		We recommend finishing it immediately or store 1 to 2 days in a sealed jar; if it separates, shake to re-integrate it.
 	</p>  
 	</div> 
 		
 	<div class="column">
 		<img 
-		src="stephanie-klepacki-bPP_TDKChEc-unsplash.jpg" 
+		src="Avocado-Smoothie-002.jpg" 
 		alt="text label for picture" 
 		id="Recipe 2"
 		width="800px"
@@ -94,7 +141,7 @@
     <div class="row">
   	<div class="column">	
 	<img 
-		src="pexels-rodnae-productions-5737581.jpg" 
+		src="Avocado-Tuna-Salad-004.jpg" 
 		alt="text label for picture" 
 		id="Recipe 3"
 		width="800px"
@@ -104,7 +151,43 @@
 		
 	<div class="column">
 	<p>
-		3rd recipe here
+		You will need:
+		<br>
+		<br>
+		1 can tuna - water packed or oil packed work
+		<br>
+		½ ripe avocado 
+		<br>
+		Celery
+		<br>
+		Red onion
+		<br>
+		Dill pickles - the key to getting that classic tangy flavor!
+		<br>
+		Lemon juice - for a little pop
+		<br>
+		Dijon mustard - it adds just the right savory note
+	</p>
+	<br>	
+	<p>
+		All you have to do is chop the veggies, then mash the ingredients together with a fork. This might just win the easiest meal ever award! 
+		<br>
+		<br>
+		Here we also provide several ideals to serve your delicious avocado tuna salad!
+		<br>
+		<input type="button" Value="Show me the ways to serve!" id="b1"/>
+		<input type="button" Value="Show less" id="b2"/>
+
+		<div class="ways">
+			<dl>
+			<dt>Sandwich</dt><dd>There’s nothing wrong with the classic! We recommend Artisan Bread, No Knead Bread, Whole Wheat Bread, or Best Sourdough.</dd>
+			<dt>Tuna melt</dt><dd>Combine it with grilled cheese to make World’s Best Tuna Melt!</dd>
+			<dt>Lettuce wraps</dt><dd>Try tuna salad wrapped in crisp lettuce leaves!</dd>
+			<dt>Main dish salad</dt><dd>Place the avocado tuna salad on mixed greens and add some sliced tomatoes and hard boiled eggs.</dd>
+			<dt>Crostini or crackers</dt><dd>Spread over baguette slices or crackers.</dd>
+			<dt>Avocado bowl</dt><dd>What to do with the other half of your avocado? Use it for serving your tuna salad!</dd>
+			</dl>
+		</div>		
 	</p>
 	</div>
 	</div>
