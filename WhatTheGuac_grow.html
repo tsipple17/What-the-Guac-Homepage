@@ -4,6 +4,23 @@
 <meta charset="utf-8">
 <title>What the Guac Grow</title>
 	<link rel="stylesheet" href="WhatTheGuac_stylesheet_v2.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	
+	<script>
+	
+		$(document).ready(function(){
+			//This sets up a listener for the image to hide when one is clicked on
+  			$("img").click(function() {
+			$(this).fadeOut(2000);	
+  			});
+		
+			//This sets up a listener for the image to hide when one is clicked on
+  			$("img").click(function() {
+			$(this).fadeIn(2000);	
+  			});
+			});
+	</script>
 </head>
 
 <body>
@@ -13,7 +30,7 @@
 	<nav>
 	<ul>
   	<li><a href="WhatTheGuac_mainpage.html">HOME</a></li>
-  	<li><a href="WhatTheGuac_where.html">WHERE</a></li>
+  	<li><a href="#WHERE">WHERE</a></li>
   	<li><a href="WhatTheGuac_grow.html">GROW</a></li>
   	<li><a href="WhatTheGuac_recipes.html">RECIPES</a></li>
 	</ul>
@@ -95,9 +112,9 @@
     <div class="row">
   	<div class="column">	
 	<img 
-		src="pexels-rodnae-productions-5737581.jpg" 
+		src="daniel-dan-JcK1Wdcz4LY-unsplash.jpg" 
 		alt="text label for picture" 
-		id="Making Guacamole"
+		id="Avocados"
 		width="800px"
 		height="570px"
 		class="responsive" >
@@ -116,6 +133,9 @@
 	</div>
 	</div>
 		
+	<div class="button">
+	<input type="button" Value="Show Picture" id="b1"/>	
+	</div>
 
 	<div class="navelement">
 		<a href="WhatTheGuac_contactus.html" target="_blank">CONTACT US</a>
